@@ -7,60 +7,103 @@
   <link rel="stylesheet" href="styles.css" />
   <script src="scripts.js" defer></script>
 </head>
+
 <body>
+  <!-- HEADER -->
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="index.html"><img src="logo.png" alt="logo" class="logo"><div class="brand-text"><h1>Mufasira</h1><p class="tag">No Compromise With Protein</p></div></a>
+      <a class="brand" href="index.html">
+        <img src="logo.png" alt="logo" class="logo">
+        <div class="brand-text">
+          <h1>Mufasira</h1>
+          <p class="tag">No Compromise With Protein</p>
+        </div>
+      </a>
+
       <nav class="nav">
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
         <a href="about.html">About</a>
         <a href="contact.html" class="active">Contact</a>
       </nav>
-      <button id="menuBtn4" class="menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+
+      <button id="menuBtn4" class="menu-btn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
+  <!-- MAIN -->
   <main>
     <section class="section contact-section">
       <div class="wrap grid-2">
+        
+        <!-- CONTACT FORM -->
         <div>
           <h3>Contact Us</h3>
           <p>Wholesale, samples or general enquiries — reach out.</p>
 
-          <form id="contactFormFull" class="contact-form">
-            <label><span>Name</span><input name="name" required></label>
-            <label><span>Email</span><input name="email" type="email" required></label>
-            <label><span>Phone</span><input name="phone"></label>
-            <label><span>Message</span><textarea name="message" rows="5" required></textarea></label>
+          <form id="contactFormFull" class="contact-form"
+                action="https://formsubmit.co/shbzahmed1@gmail.com" method="POST">
+
+            <!-- Hidden settings -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="New Contact Form Enquiry from Mufasira Website">
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+
+            <label>
+              <span>Name</span>
+              <input name="name" required>
+            </label>
+
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" required>
+            </label>
+
+            <label>
+              <span>Phone</span>
+              <input name="phone">
+            </label>
+
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
 
             <div class="form-actions">
               <button class="btn primary" type="submit">Send</button>
               <button class="btn ghost" type="reset">Reset</button>
             </div>
+
             <div id="statusFull" class="form-status"></div>
           </form>
         </div>
 
+        <!-- CONTACT INFO -->
         <aside>
           <div class="info-card">
             <h4>Head Office</h4>
             <p>Mufasira Foods, Industrial Park, City</p>
-            <p><strong>Email:</strong> sales@mufasira.example</p>
-            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Email:</strong> support@mufasira.com</p>
+            <p><strong>Phone:</strong> +91 9986242087</p>
           </div>
 
           <div class="map-placeholder">
-            <!-- Put an embedded Google Map or Static Map here later -->
             <img src="https://images.unsplash.com/photo-1542736667-069246bdbc75?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="map placeholder">
           </div>
         </aside>
+
       </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="wrap footer-row"><p>&copy; <span id="yearContact"></span> Mufasira</p></div>
+    <div class="wrap footer-row">
+      <p>&copy; <span id="yearContact"></span> Mufasira</p>
+    </div>
   </footer>
 </body>
 </html>
