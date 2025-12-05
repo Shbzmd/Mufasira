@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products — Mufasira</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="logo.png" alt="logo" class="logo"><div class="brand-text"><h1>Mufasira</h1><p class="tag">No Compromise With Protein</p></div></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="menuBtn2" class="menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head"><h3>Products</h3><p>Browse dehydrated fruits, vegetables & powders.</p></div>
+
+        <!-- filters -->
+        <div class="filters">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="fruits">Fruits</button>
+          <button class="chip" data-filter="veggies">Vegetables</button>
+          <button class="chip" data-filter="powders">Powders</button>
+        </div>
+
+        <!-- products grid -->
+        <div id="productGrid" class="product-grid products-multi">
+          <!-- product items: reuse similar structure; image placeholders -->
+          <article class="p-card fruits">
+            <img src="https://images.unsplash.com/photo-1502741126161-b048400d8f90?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Apple chips">
+            <div class="p-info">
+              <h4>Apple Crisps</h4>
+              <p>Tangy & crispy apple slices — great as snack & topping.</p>
+              <div class="p-actions">
+                <span class="price">₹149 / 50g</span>
+                <a href="#" class="btn small">Add</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="p-card fruits">
+            <img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Kiwi chips">
+            <div class="p-info">
+              <h4>Dried Kiwi</h4>
+              <p>Tropical zing with fiber & antioxidants.</p>
+              <div class="p-actions"><span class="price">₹199 / 40g</span><a href="#" class="btn small">Add</a></div>
+            </div>
+          </article>
+
+          <article class="p-card veggies">
+            <img src="https://images.unsplash.com/photo-1604908177522-bd0b1b4a6a0b?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Tomato crisps">
+            <div class="p-info">
+              <h4>Tomato Crisps</h4>
+              <p>Savory crisps — excellent as salad topping.</p>
+              <div class="p-actions"><span class="price">₹129 / 35g</span><a href="#" class="btn small">Add</a></div>
+            </div>
+          </article>
+
+          <article class="p-card powders">
+            <img src="https://images.unsplash.com/photo-1627268702903-0f7e0b8a65b0?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Fruit powder">
+            <div class="p-info">
+              <h4>Mixed Fruit Powder</h4>
+              <p>Blend for smoothies, pancakes, and shakes.</p>
+              <div class="p-actions"><span class="price">₹249 / 100g</span><a href="#" class="btn small">Add</a></div>
+            </div>
+          </article>
+
+          <!-- duplicate a few more for grid -->
+          <article class="p-card veggies">
+            <img src="https://images.unsplash.com/photo-1572441710266-0b2df48f0f55?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Carrot chips">
+            <div class="p-info"><h4>Carrot Crisps</h4><p>Sweet & crunchy, great for kids.</p><div class="p-actions"><span class="price">₹119 / 40g</span><a href="#" class="btn small">Add</a></div></div>
+          </article>
+
+          <article class="p-card fruits">
+            <img src="https://images.unsplash.com/photo-1508253578933-e3e4f8b24f2f?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Pineapple rings">
+            <div class="p-info"><h4>Pineapple Rings</h4><p>Sweet tropical bites.</p><div class="p-actions"><span class="price">₹179 / 50g</span><a href="#" class="btn small">Add</a></div></div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row"><p>&copy; <span id="yearProducts"></span> Mufasira</p></div>
+  </footer>
+</body>
+</html>

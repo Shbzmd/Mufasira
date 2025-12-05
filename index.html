@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mufasira — Premium Dehydrated Fruits & Veggies</title>
+  <meta name="description" content="Mufasira - No Compromise With Protein, Healthy Hamesha. Dehydrated fruits & vegetables." />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="Mufasira Logo" class="logo">
+        <div class="brand-text">
+          <h1>Mufasira</h1>
+          <p class="tag">No Compromise With Protein, Healthy Hamesha</p>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button id="menuBtn" class="menu-btn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero hero-vivid">
+      <div class="wrap hero-grid">
+        <div class="hero-left">
+          <p class="kicker">Premium • Nutrient-dense • Playful</p>
+          <h2>Nature, Concentrated — <span class="accent">Mufasira</span></h2>
+          <p class="hero-lead">Vibrant dehydrated fruits & vegetables — crunchy, protein-friendly and perfect for snacks, smoothies, and recipes. <strong>No Compromise With Protein, Healthy Hamesha.</strong></p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="products.html">Shop Products</a>
+            <a class="btn ghost" href="#why">Why Dehydrated?</a>
+          </div>
+
+          <ul class="icons-row">
+            <li>Cold-dried</li>
+            <li>No preservatives</li>
+            <li>Protein concentrated</li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <div class="device-card">
+            <img src="https://images.unsplash.com/photo-1592928302275-b9a3e3c8f24c?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Assorted fruit slices" />
+            <div class="floating-slices">
+              <img class="slice s1" src="https://images.unsplash.com/photo-1508253578933-e3e4f8b24f2f?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="">
+              <img class="slice s2" src="https://images.unsplash.com/photo-1572441710266-0b2df48f0f55?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT PREVIEW -->
+    <section id="products-preview" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h3>Explore Collections</h3>
+          <p>Fruits • Vegetables • Powders — colorful, flavorful and nutrient-rich.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card fruit">
+            <img src="https://images.unsplash.com/photo-1502741126161-b048400d8f90?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Apple chips">
+            <div class="card-body">
+              <h4>Dehydrated Fruits</h4>
+              <p>Apple, kiwi, pineapple, banana — bright, portable nutrition.</p>
+              <a href="products.html#fruits" class="link">See fruits →</a>
+            </div>
+          </article>
+
+          <article class="card veg">
+            <img src="https://images.unsplash.com/photo-1604908177522-bd0b1b4a6a0b?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Vegetable crisps">
+            <div class="card-body">
+              <h4>Dehydrated Vegetables</h4>
+              <p>Tomato, onion, beetroot, carrot — savory & nutrient-dense.</p>
+              <a href="products.html#veggies" class="link">See veggies →</a>
+            </div>
+          </article>
+
+          <article class="card powder">
+            <img src="https://images.unsplash.com/photo-1627268702903-0f7e0b8a65b0?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Fruit powder">
+            <div class="card-body">
+              <h4>Powders & Blends</h4>
+              <p>Concentrated fruit & vegetable powders for smoothies and recipes.</p>
+              <a href="products.html#powders" class="link">See powders →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section id="why" class="section why vivid">
+      <div class="wrap grid-2">
+        <div>
+          <h3>Why Dehydrated?</h3>
+          <p>We use low-temperature cold drying to remove water while preserving vitamins, minerals and proteins. That concentrates nutrients per gram, reduces spoilage and creates lightweight, portable foods.</p>
+          <ul class="list">
+            <li><strong>Protein density:</strong> Higher protein per serving by weight.</li>
+            <li><strong>Nutrient retention:</strong> Up to 85–90% vitamins preserved in cold-process.</li>
+            <li><strong>Convenience:</strong> Long shelf life, travel friendly.</li>
+          </ul>
+          <a class="btn primary" href="products.html">Shop Now</a>
+        </div>
+
+        <div class="why-visual">
+          <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Stacked dried fruit">
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section testimonials">
+      <div class="wrap">
+        <h3>What customers say</h3>
+        <div class="test-grid">
+          <figure class="test">
+            <img src="https://images.unsplash.com/photo-1545996124-1cde9f9a5a6b?q=80&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="">
+            <figcaption>
+              <strong>Sana</strong>
+              <p>My kids love the apple chips — healthy & tasty.</p>
+            </figcaption>
+          </figure>
+          <figure class="test">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="">
+            <figcaption>
+              <strong>Rohit</strong>
+              <p>Powders blend perfectly into shakes. Clean ingredients.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FOOTER -->
+    <section class="cta-strip">
+      <div class="wrap cta-row">
+        <div>
+          <h3>Ready to try Mufasira?</h3>
+          <p>Order sample packs or contact for wholesale.</p>
+        </div>
+        <div>
+          <a href="contact.html" class="btn primary">Request Samples</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p>&copy; <span id="yearHome"></span> Mufasira — No Compromise With Protein, Healthy Hamesha.</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
